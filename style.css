@@ -50,6 +50,7 @@ body::after{
   border-radius: 10px;
   border: none;
   margin: 20px 0;
+  font-size: 16px;
 }
 
 button {
