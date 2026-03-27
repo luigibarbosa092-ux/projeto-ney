@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+/* FUNDO */
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("img/fundo.jpg") no-repeat center/cover;
+  opacity: 0.5;
+  z-index: -2;
+}
+
+body::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(29, 29, 29, 0.5);
+    z-index: -1;
+
+}
+
+/* LOGIN E APP */
+.login, .container {
+  text-align: center;
+  background: rgba(22, 22, 22, 0.897);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.login input {
+  padding: 12px;
+  width: 250px;
+  border-radius: 10px;
+  border: none;
+  margin: 20px 0;
+}
+
+button {
+  padding: 12px 25px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+/* Botão verde do login */
+.login button {
+  background-color: #28a745;
+  color: white;
+}
+
+.login button:hover {
+  background-color: #1e7e34;
+}
+
+.sim {
+  background: green;
+  color: white;
+}
+
+.nao {
+  background: red;
+  color: white;
+}
+
+.sim:hover, .nao:hover {
+  opacity: 0.8;
+}
+
+#mensagem {
+  margin-top: 20px;
+  display: none;
+  font-size: 18px;
+}
+
+.neymar {
+  width: 180px;
+  margin: 20px 0;
+  filter: drop-shadow(0 0 10px black);
+}
+
+/* CONFETE */
+.confete {
+  position: fixed;
+  top: -10px;
+  width: 10px;
+  height: 10px;
+  background: yellow;
+  animation: cair linear forwards;
+  z-index: 9999;
+}
+
+@keyframes cair {
+  to {
+    transform: translateY(100vh);
+  }
+}
+  
