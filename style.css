@@ -139,4 +139,12 @@ button {
     width: 120px;
   }
 }
+
+.login input {
+width: 80%;
+max-width: 350px;
+font-size: 16px;
+padding:14px;
+}
+
   
