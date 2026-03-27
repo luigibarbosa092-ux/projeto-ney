@@ -113,4 +113,29 @@ button {
     transform: translateY(100vh);
   }
 }
+
+@media (max-width: 600px) {
+
+  body {
+    padding: 20px;
+  }
+
+  .login, .container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .neymar {
+    width: 120px;
+  }
+}
   
