@@ -1,5 +1,7 @@
 let nomeUsuario = "";
 let votou = false;
+let votosSim = 0;
+let votosNao = 0;
 
 function entrar() {
   let nome = document.getElementById("nome").value.trim();
@@ -17,25 +19,37 @@ function entrar() {
     nomeUsuario + ", levaria o Neymar pra Copa ou não?";
 
   document.getElementById("mensagem").style.display = "none";
+  document.getElementById("resultado-votos").style.display = "none";
 }
 
 function votarSim() {
   if (votou) return alert("Você já votou!");
   votou = true;
+  votosSim++;
   mostrarMensagem("Parabéns! Eu levaria o Ney também 🇧🇷🔥");
+  atualizarResultados();
   confete();
+  document.getElementById("resultado-votos").style.display = "block";
 }
 
 function votarNao() {
   if (votou) return alert("Você já votou!");
   votou = true;
+  votosNao++;
   mostrarMensagem("Que pena… já perdemos a Copa 😢");
+  atualizarResultados();
+  document.getElementById("resultado-votos").style.display = "block";
 }
 
 function mostrarMensagem(texto) {
   const msg = document.getElementById("mensagem");
   msg.innerText = texto;
   msg.style.display = "block";
+}
+
+function atualizarResultados() {
+  const resultado = document.getElementById("resultado-votos");
+  resultado.innerHTML = `${votosSim} votaram SIM leva o Ney<br>${votosNao} votaram NÃO o Ney`;
 }
 
 function confete() {

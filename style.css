@@ -116,104 +116,47 @@ button {
 }
 
 @media (max-width: 600px) {
-
   body {
     padding: 20px;
   }
-
   .login, .container {
     width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
     padding: 20px;
     border-radius: 15px;
   }
-
   h1 {
     font-size: 22px;
+    word-break: break-word;
   }
-
-  /* 🔥 INPUT GRANDE, MAS SEM TAMPA A BANDEIRA */
   .login input {
     width: 85%;
     max-width: 340px;
-    font-size: 16px; /* evita zoom */
+    font-size: 16px;
     padding: 16px;
     border-radius: 12px;
+    box-sizing: border-box;
   }
-
-  /* BOTÃO */
   button {
     width: 85%;
     max-width: 340px;
     padding: 14px;
     font-size: 16px;
+    box-sizing: border-box;
   }
-
-  /* BOTÕES DE VOTO */
   .buttons {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-
-  /* IMAGEM DO NEYMAR */
   .neymar {
     width: 120px;
+    max-width: 100%;
+    height: auto;
   }
-
-  /* TEXTO */
   #mensagem {
     font-size: 16px;
+    word-break: break-word;
   }
-
-}
-@media (max-width: 600px) {
-
-  body {
-    padding: 20px;
-  }
-
-  .login, .container {
-    width: 100%;
-    padding: 20px;
-    border-radius: 15px;
-  }
-
-  h1 {
-    font-size: 22px;
-  }
-
-  /* 🔥 INPUT GRANDE, MAS SEM TAMPA A BANDEIRA */
-  .login input {
-    width: 85%;
-    max-width: 340px;
-    font-size: 16px; /* evita zoom */
-    padding: 16px;
-    border-radius: 12px;
-  }
-
-  /* BOTÃO */
-  button {
-    width: 85%;
-    max-width: 340px;
-    padding: 14px;
-    font-size: 16px;
-  }
-
-  /* BOTÕES DE VOTO */
-  .buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  /* IMAGEM DO NEYMAR */
-  .neymar {
-    width: 120px;
-  }
-
-  /* TEXTO */
-  #mensagem {
-    font-size: 16px;
-  }
-
 }
