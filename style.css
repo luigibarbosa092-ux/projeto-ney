@@ -142,9 +142,9 @@ button {
 
 .login input {
 width: 95%;
-max-width: 400px;
+max-width:none;
 font-size: 16px;
-padding:14px;
+padding: 19px;
 }
 
   
