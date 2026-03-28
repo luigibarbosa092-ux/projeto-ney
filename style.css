@@ -44,13 +44,16 @@ body::after{
   backdrop-filter: blur(10px);
 }
 
+
 .login input {
-  padding: 14px;
-  width: 320px;
+  padding: 16px;
+  width: 400px;
+  max-width: 400px;
   border-radius: 12px;
   border: none;
   margin: 20px 0;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 button {
@@ -151,7 +154,7 @@ button {
     gap: 10px;
   }
   .neymar {
-    width: 170px;
+    width: 171px;
     max-width: 100%;
     height: auto;
   }
