@@ -45,9 +45,9 @@ body::after{
 }
 
 .login input {
-  padding: 12px;
-  width: 250px;
-  border-radius: 10px;
+  padding: 14px;
+  width: 320px;
+  border-radius: 12px;
   border: none;
   margin: 20px 0;
   font-size: 16px;
@@ -93,7 +93,7 @@ button {
 }
 
 .neymar {
-  width: 180px;
+  width: 240px;
   margin: 20px 0;
   filter: drop-shadow(0 0 10px black);
 }
@@ -131,7 +131,7 @@ button {
     word-break: break-word;
   }
   .login input {
-    width: 85%;
+    width: 95%;
     max-width: 340px;
     font-size: 16px;
     padding: 16px;
@@ -151,7 +151,7 @@ button {
     gap: 10px;
   }
   .neymar {
-    width: 120px;
+    width: 170px;
     max-width: 100%;
     height: auto;
   }

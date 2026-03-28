@@ -30,6 +30,7 @@ function votarSim() {
   atualizarResultados();
   confete();
   document.getElementById("resultado-votos").style.display = "block";
+  document.querySelector('.buttons').style.display = 'none';
 }
 
 function votarNao() {
@@ -39,6 +40,7 @@ function votarNao() {
   mostrarMensagem("Que pena… já perdemos a Copa 😢");
   atualizarResultados();
   document.getElementById("resultado-votos").style.display = "block";
+  document.querySelector('.buttons').style.display = 'none';
 }
 
 function mostrarMensagem(texto) {
