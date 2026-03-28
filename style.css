@@ -118,16 +118,30 @@ button {
 @media (max-width: 600px) {
 
   body {
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
   }
 
   .login, .container {
-    width: 100%;
+    width: 85%;
+    max-width: 400px;
     padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   button {
-    width: 100%;
+    width: 80%;
+    height: 55px;
+    font-size: 20px;
+    margin: 10px auto;
   }
 
   .buttons {
@@ -136,7 +150,8 @@ button {
   }
 
   .neymar {
-    width: 120px;
+    width: 100px;
+    margin-bottom: 15px;
   }
 }
 
